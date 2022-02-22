@@ -29,14 +29,14 @@ export default function HeroComponent() {
             Let's Go
           </button>
         </div> */}
-        <div className="absolute -bottom-16 mx-auto w-full">
+        <div className="absolute -bottom-16 mx-auto w-full flex justify-center">
           <div>
             <img src={bitmap} className="w-40" alt="" />
           </div>
         </div>
-        <div className="absolute -bottom-5 mx-auto w-full">
+        <div className="absolute -bottom-5 mx-auto w-full flex justify-center">
           <div>
-            <button className="bg-white px-16 py-3 rounded-full">
+            <button className="bg-white px-20 py-3 rounded-full">
               Let's Go
             </button>
           </div>
