@@ -1,10 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Layout from "./layout/Layout";
 
 function App() {
   return (
     <div>
-      <h1 className="text-xl font-bold">Hai</h1>
+      <Layout />
     </div>
   );
 }
