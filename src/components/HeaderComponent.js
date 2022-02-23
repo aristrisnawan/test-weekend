@@ -4,7 +4,7 @@ import avatar from "../images/avatar.png";
 export default function HeaderComponent() {
   return (
     <div>
-      <div className="flex flex-row bg-white p-5 absolute z-20 w-full">
+      <div className="flex flex-row bg-white py-5 px-5 absolute z-20 w-full laptop:px-56">
         <div className="h-10 w-10 bg-blue-200 mr-2 rounded my-auto">
           <img src={avatar} alt="" />
         </div>
