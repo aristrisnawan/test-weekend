@@ -8,7 +8,7 @@ import biru from "../images/biru.png";
 
 export default function HeroComponent() {
   return (
-    <div className="w-full h-screen bg-[#EEBECE] relative">
+    <div className="w-full h-screen bg-[#EEBECE] relative laptop:h-[720px]">
       <HeaderComponent />
       <div
         className="w-full h-5/6 bg-cover relative laptop:h-full"
@@ -26,7 +26,7 @@ export default function HeroComponent() {
         <div className="hidden laptop:block">
           <div className="flex flex-col">
             <div
-              className=" h-full w-full bg-center absolute -top-56 bg-no-repeat -ml-48"
+              className=" h-full w-full bg-center absolute -top-60 bg-no-repeat -ml-40"
               style={{ backgroundImage: `url(${biru})` }}
             ></div>
             <div
@@ -37,19 +37,19 @@ export default function HeroComponent() {
         </div>
 
         <div className="text-center text-white  absolute top-32 mx-auto w-full">
-          <div className="font-extrabold text-5xl laptop:text-6xl laptop:mt-7">
+          <div className="font-extrabold text-5xl laptop:text-6xl laptop:mt-9">
             <p>WEEKEND FROM HOME</p>
           </div>
           <p className="pt-3 italic laptop:font-bold laptop:text-xl">
             Stay active with a little workout.
           </p>
         </div>
-        <div className="absolute -bottom-16 mx-auto w-full flex justify-center laptop:bottom-3">
+        <div className="absolute -bottom-16 mx-auto w-full flex justify-center laptop:bottom-20">
           <div>
             <img src={bitmap} className="w-40  laptop:w-52" alt="" />
           </div>
         </div>
-        <div className="absolute -bottom-5 mx-auto w-full flex justify-center laptop:bottom-20">
+        <div className="absolute -bottom-5 mx-auto w-full flex justify-center laptop:bottom-36">
           <div>
             <button className="bg-white px-20 py-3 rounded-full laptop:px-24">
               Let's Go
@@ -59,7 +59,7 @@ export default function HeroComponent() {
 
         {/* dekstop */}
         <div className=" hidden laptop:block ">
-          <div className="absolute -bottom-16 w-full laptop:bottom-3 flex flex-row justify-end px-40">
+          <div className="absolute w-full -bottom-16 laptop:bottom-20 flex flex-row justify-end px-40">
             <div>
               <img src={merah1} className=" w-full" alt="" />
             </div>
