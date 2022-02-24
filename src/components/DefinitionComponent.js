@@ -41,13 +41,13 @@ export default function DefinitionComponent() {
       </div>
 
       {/* path rounded */}
-      <div className="px-11 laptop:px-60 laptop:pt-16">
+      <div className="px-11 tablet:px-60 tablet:pt-16 laptop:px-60 laptop:pt-16">
         <img src={bulat} className=" w-24" alt="" />
       </div>
 
       {/* testimoni */}
       <div className=" -mt-5 pl-5">
-        <p className="text-3xl text-white font-bold laptop:text-center mb-10">
+        <p className="text-3xl text-white font-bold tablet:text-center laptop:text-center mb-10">
           Testimonial
         </p>
         <Swiper

@@ -23,7 +23,7 @@ export default function HeroComponent() {
         </div>
 
         {/* blue for dekstop */}
-        <div className="hidden laptop:block">
+        <div className="hidden tablet:block laptop:block">
           <div className="flex flex-col">
             <div
               className=" h-full w-full bg-center absolute -top-60 bg-no-repeat -ml-40"
