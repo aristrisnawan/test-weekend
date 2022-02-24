@@ -2,6 +2,13 @@ import React from "react";
 import merah2 from "../images/merah2.png";
 import bitmap from "../images/bitmap.png";
 import bulat from "../images/bulat.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import { Pagination, Navigation } from "swiper";
 
 export default function DefinitionComponent() {
   return (
@@ -39,13 +46,34 @@ export default function DefinitionComponent() {
       </div>
 
       {/* testimoni */}
-      <div className=" -mt-5 px-5">
-        <p className="text-3xl text-white font-bold laptop:text-center">
+      <div className=" -mt-5 pl-5">
+        <p className="text-3xl text-white font-bold laptop:text-center mb-10">
           Testimonial
         </p>
-        {/* <div>
-          <div className="w-24 h-24 bg-blue-700 mt-2"></div>
-        </div> */}
+        <Swiper
+          slidesPerView={2}
+          spaceBetween={90}
+          slidesPerGroup={3}
+          loop={true}
+          loopFillGroupWithBlank={false}
+          navigation={false}
+          modules={[Pagination, Navigation]}
+        >
+          <div>
+            <SwiperSlide className=" mx-4">
+              <div className="w-52 h-24 bg-blue-500"></div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="w-52 h-24 bg-black"></div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="w-52 h-24 bg-gray-500"></div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="w-52 h-24 bg-red-300"></div>
+            </SwiperSlide>
+          </div>
+        </Swiper>
       </div>
     </div>
   );
