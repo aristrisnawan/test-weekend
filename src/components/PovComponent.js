@@ -18,8 +18,8 @@ export default function PovComponent() {
 
 export function PopTitle() {
   return (
-    <div className="w-full text-white text-left pt-24 px-5">
-      <h1 className=" font-bold text-2xl my-6">POV</h1>
+    <div className="w-full text-white text-left pt-24 px-5 laptop:px-80 tablet:px-56 tablet:text-center laptop:text-center">
+      <h1 className=" font-bold text-2xl my-6 tablet:text-4xl">POV</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -33,8 +33,8 @@ export function PopTitle() {
 
 export function ResourceTitle() {
   return (
-    <div className="w-full text-white text-left mt-3 px-5">
-      <h1 className="font-bold text-2xl my-6">Resource</h1>
+    <div className="w-full text-white text-left mt-3 px-5 laptop:px-80 tablet:px-56 tablet:text-center laptop:text-center tablet:mt-14">
+      <h1 className="font-bold text-2xl my-6 tablet:text-4xl">Resource</h1>
       <p>
         These cases are perfectly simple and easy to distinguish. In a free
         hour, when our power of choice is untrammelled and when nothing prevents
@@ -55,8 +55,11 @@ export function HelpTitle() {
     });
   }, []);
   return (
-    <div className="w-full mt-3 px-5">
-      <div className="grid mobile:grid-cols-1 mobile:gap-y-3">
+    <div className="w-full mt-3 px-5 tablet:px-56 laptop:px-56 laptop:mt-10">
+      <h1 className="font-bold text-2xl my-6 tablet:text-4xl text-white tablet:text-center">
+        Help & Tips
+      </h1>
+      <div className="grid mobile:grid-cols-1 mobile:gap-y-3 tablet:grid-cols-3 laptop:grid-cols-3 tablet:gap-x-2 laptop:gap-x-2">
         {help.map((items) => {
           return (
             <div
@@ -84,8 +87,10 @@ export function HelpTitle() {
 
 export function SetTitle() {
   return (
-    <div className="w-full text-white text-left mt-14 px-5">
-      <h1 className="font-bold text-2xl my-6">You’re all set.</h1>
+    <div className="w-full text-white text-left mt-14 px-5 laptop:px-80 tablet:px-56 tablet:text-center laptop:text-center">
+      <h1 className="font-bold text-2xl my-6 tablet:text-4xl">
+        You’re all set.
+      </h1>
       <p>
         The wise man therefore always holds in these matters to this principle
         of selection.
