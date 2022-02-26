@@ -51,7 +51,7 @@ export default function HeroComponent() {
         </div>
         <div className="absolute -bottom-5 mx-auto w-full flex justify-center laptop:bottom-36">
           <div>
-            <button className="bg-white px-20 py-3 rounded-full laptop:px-24">
+            <button className="bg-white px-20 py-3 rounded-full laptop:px-24 font-semibold cursor-pointer">
               Let's Go
             </button>
           </div>

@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    /* make scrollbar transparent */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.swiper-button-next {
+    background-image: url(./images/kanan.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.swiper-button-next::after {
+    display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.swiper-button-prev {
+    background-image: url(./images/kiri.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.swiper-button-prev::after {
+    display: none;
 }
